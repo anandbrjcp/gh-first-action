@@ -2,10 +2,14 @@ name: first job
 on: workflow_dispatch
 jobs:
   first_job:
-    runs-on: ubunutu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: print hello world
         run: echo "hello world"
       - name: print bye world
         run: echo "done bye"
+      - name: run multiple commands
+        run: |
+            echo "First output"
+            echo "Second output"
     
